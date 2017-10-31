@@ -12,5 +12,5 @@ RUN		git clone https://github.com/tpruvot/cpuminer-multi -b linux
 
 RUN		cd cpuminer-multi && ./build.sh
 
-WORKDIR		/cpuminer-multi
-ENTRYPOINT	["./cpuminer"]
+#WORKDIR		/cpuminer-multi
+ENTRYPOINT	["/cpuminer-multi/cpuminer"]
